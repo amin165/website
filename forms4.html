@@ -1,0 +1,301 @@
+st login: Mon Jun 29 12:30:03 on ttys000
+Aminas-MacBook:~ aminaluv10$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/aminaluv10/.ssh/id_rsa): 
+Created directory '/Users/aminaluv10/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/aminaluv10/.ssh/id_rsa.
+Your public key has been saved in /Users/aminaluv10/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:6A6ytJFyz0BH5HDHPXrLJbxb70KbobpnqK1P9jXRdfk aminaluv10@Aminas-MacBook.local
+The key's randomart image is:
++---[RSA 2048]----+
+|  . o...         |
+|   = .. o       .|
+|    o  o .    ...|
+|   .  ..+ .. . ..|
+|  . . .oS=. .   E|
+| . o .  + +.     |
+|. B . +. =o=     |
+| + O *..=.+..    |
+|  o =+*=.  o.    |
++----[SHA256]-----+
+Aminas-MacBook:~ aminaluv10$ ls -a
+.			.local			Music
+..			.ssh			Pictures
+.CFUserTextEncoding	.viminfo		Public
+.DS_Store		Applications		achs
+.Trash			Desktop			fruits.txt
+.bash_history		Documents		hello.html
+.bash_sessions		Downloads		testdir
+.config			Library			website
+.cups			Movies			word.txt
+Aminas-MacBook:~ aminaluv10$ mkdir Projects
+Aminas-MacBook:~ aminaluv10$ ls -a
+.			.ssh			Projects
+..			.viminfo		Public
+.CFUserTextEncoding	Applications		achs
+.DS_Store		Desktop			fruits.txt
+.Trash			Documents		hello.html
+.bash_history		Downloads		testdir
+.bash_sessions		Library			website
+.config			Movies			word.txt
+.cups			Music
+.local			Pictures
+Aminas-MacBook:~ aminaluv10$ ls
+Applications	Library		Projects	hello.html
+Desktop		Movies		Public		testdir
+Documents	Music		achs		website
+Downloads	Pictures	fruits.txt	word.txt
+Aminas-MacBook:~ aminaluv10$ cd .ssh/
+Aminas-MacBook:.ssh aminaluv10$ ls
+id_rsa		id_rsa.pub
+Aminas-MacBook:.ssh aminaluv10$ vi id_rsa.pub
+Aminas-MacBook:.ssh aminaluv10$ cd
+Aminas-MacBook:~ aminaluv10$ cd Projects/
+Aminas-MacBook:Projects aminaluv10$ git clone git@github.com:amin165/website.git
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+Aminas-MacBook:Projects aminaluv10$ ls
+Aminas-MacBook:Projects aminaluv10$ cd website/
+-bash: cd: website/: No such file or directory
+Aminas-MacBook:Projects aminaluv10$ vi index.html
+Aminas-MacBook:Projects aminaluv10$ git status
+xcode-select: note: no developer tools were found at '/Applications/Xcode.app', requesting install. Choose an option in the dialog to download the command line developer tools.
+Aminas-MacBook:Projects aminaluv10$ cd index.html
+-bash: cd: index.html: No such file or directory
+Aminas-MacBook:Projects aminaluv10$ got clone git@github.com:amin165/website.git
+-bash: got: command not found
+Aminas-MacBook:Projects aminaluv10$ get clone git@github.com:amin165/website.git
+-bash: get: command not found
+Aminas-MacBook:Projects aminaluv10$ git clone git@github.com:amin165/website.git
+Cloning into 'website'...
+The authenticity of host 'github.com (140.82.112.4)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,140.82.112.4' (RSA) to the list of known hosts.
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), 12.46 KiB | 510.00 KiB/s, done.
+Aminas-MacBook:Projects aminaluv10$ vi index.html
+Aminas-MacBook:Projects aminaluv10$ ls
+index.html	website
+Aminas-MacBook:Projects aminaluv10$ git statur
+git: 'statur' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+Aminas-MacBook:Projects aminaluv10$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Aminas-MacBook:Projects aminaluv10$ git add index.html
+fatal: Not a git repository (or any of the parent directories): .git
+Aminas-MacBook:Projects aminaluv10$ cd website
+Aminas-MacBook:website aminaluv10$ git add index.html
+fatal: pathspec 'index.html' did not match any files
+Aminas-MacBook:website aminaluv10$ cd
+Aminas-MacBook:~ aminaluv10$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Aminas-MacBook:~ aminaluv10$ cd Projects
+Aminas-MacBook:Projects aminaluv10$ cd website
+Aminas-MacBook:website aminaluv10$ ls
+LICENSE		README.md
+Aminas-MacBook:website aminaluv10$ cd
+Aminas-MacBook:~ aminaluv10$ cd Projects
+Aminas-MacBook:Projects aminaluv10$ ls
+index.html	website
+Aminas-MacBook:Projects aminaluv10$ cd website
+Aminas-MacBook:website aminaluv10$ git add index.html
+fatal: pathspec 'index.html' did not match any files
+Aminas-MacBook:website aminaluv10$ cd Projects
+-bash: cd: Projects: No such file or directory
+Aminas-MacBook:website aminaluv10$ cd
+Aminas-MacBook:~ aminaluv10$ cd Projects
+Aminas-MacBook:Projects aminaluv10$ git add index.html website
+fatal: Not a git repository (or any of the parent directories): .git
+Aminas-MacBook:Projects aminaluv10$ git add index.html
+fatal: Not a git repository (or any of the parent directories): .git
+Aminas-MacBook:Projects aminaluv10$ vi index.html
+Aminas-MacBook:Projects aminaluv10$ rm index.html
+Aminas-MacBook:Projects aminaluv10$ cd index.html
+-bash: cd: index.html: No such file or directory
+Aminas-MacBook:Projects aminaluv10$ vi index.html
+Aminas-MacBook:Projects aminaluv10$ ls
+website
+Aminas-MacBook:Projects aminaluv10$ cd website
+Aminas-MacBook:website aminaluv10$ git add index.html
+fatal: pathspec 'index.html' did not match any files
+Aminas-MacBook:website aminaluv10$ vi index.html
+Aminas-MacBook:website aminaluv10$ ls
+LICENSE		README.md	index.html
+Aminas-MacBook:website aminaluv10$ git commit -m "Create homepage"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+	index.html
+
+nothing added to commit but untracked files present
+Aminas-MacBook:website aminaluv10$ git add index.html
+Aminas-MacBook:website aminaluv10$ git commit -m "Create homepage"
+[master a42d620] Create homepage
+ Committer: Amina Luvsanchutlem <aminaluv10@Aminas-MacBook.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 10 insertions(+)
+ create mode 100644 index.html
+Aminas-MacBook:website aminaluv10$ git config --global --edit
+Aminas-MacBook:website aminaluv10$ git commit --amend --reset-author
+[master a8fd813] Create homepage
+ 1 file changed, 10 insertions(+)
+ create mode 100644 index.html
+Aminas-MacBook:website aminaluv10$ git push
+Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 418 bytes | 418.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:amin165/website.git
+   f5e1c2f..a8fd813  master -> master
+Aminas-MacBook:website aminaluv10$ vi index.html
+Aminas-MacBook:website aminaluv10$ git commit -m "Made colorful!"
+-bash: !": event not found
+Aminas-MacBook:website aminaluv10$ git commit -m "Made colorful"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+	modified:   index.html
+
+no changes added to commit
+Aminas-MacBook:website aminaluv10$ git add idex.html
+fatal: pathspec 'idex.html' did not match any files
+Aminas-MacBook:website aminaluv10$ git add index.html
+Aminas-MacBook:website aminaluv10$ git commit -m "Made colorful"
+[master f8ded34] Made colorful
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Aminas-MacBook:website aminaluv10$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 484 bytes | 484.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:amin165/website.git
+   a8fd813..f8ded34  master -> master
+Aminas-MacBook:website aminaluv10$ cd
+Aminas-MacBook:~ aminaluv10$ cd website
+Aminas-MacBook:website aminaluv10$ cd minimal_page.html
+-bash: cd: minimal_page.html: Not a directory
+Aminas-MacBook:website aminaluv10$ vi minimal_page.html
+Aminas-MacBook:website aminaluv10$ vi gallery1.html
+Aminas-MacBook:website aminaluv10$ vi gallery1.html
+Aminas-MacBook:website aminaluv10$ vi minimal_page.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+
+[1]+  Stopped                 vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+
+[2]+  Stopped                 vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vim -r gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ rm gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ cd
+Aminas-MacBook:~ aminaluv10$ cd website
+-bash: cd: website: No such file or directory
+Aminas-MacBook:~ aminaluv10$ cd Documents
+Aminas-MacBook:Documents aminaluv10$ cd website
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi galler2.html
+Aminas-MacBook:website aminaluv10$ rm galler2.html
+rm: galler2.html: No such file or directory
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ cd
+Aminas-MacBook:~ aminaluv10$ cd
+Aminas-MacBook:~ aminaluv10$ cd website
+-bash: cd: website: No such file or directory
+Aminas-MacBook:~ aminaluv10$ cd Documents 
+Aminas-MacBook:Documents aminaluv10$ cd website
+Aminas-MacBook:website aminaluv10$ cd gallery2.html
+-bash: cd: gallery2.html: Not a directory
+Aminas-MacBook:website aminaluv10$ vi gallery2.html
+Aminas-MacBook:website aminaluv10$ vi gdw.html
+Aminas-MacBook:website aminaluv10$ vi gdw
+Aminas-MacBook:website aminaluv10$ vi gdw.html.dwp
+Aminas-MacBook:website aminaluv10$ vi gdw.html.txt
+Aminas-MacBook:website aminaluv10$ vi gdw.html
+Aminas-MacBook:website aminaluv10$ vi gdw
+Aminas-MacBook:website aminaluv10$ vi gwd.html
+Aminas-MacBook:website aminaluv10$ vi forms1.html
+Aminas-MacBook:website aminaluv10$ vi forms1.html
+Aminas-MacBook:website aminaluv10$ vi forms2.html
+Aminas-MacBook:website aminaluv10$ vi forms1.html
+Aminas-MacBook:website aminaluv10$ vi forms2.html
+Aminas-MacBook:website aminaluv10$ vi forms2.html
+Aminas-MacBook:website aminaluv10$ vi forms3.html
+Aminas-MacBook:website aminaluv10$ vi forms3.html
+Aminas-MacBook:website aminaluv10$ vi forms3.html
+
+<!DOCTYPE html>
+<head> 
+<title>Pizza Form<t</title> 
+</head> 
+<!—- content starts below here —->
+<h1>Pizza Form</h1>
+<form method="GET" action="http://openbookproject.net/tutorials/getdown/resources/getecho.php">
+<fieldset>
+<legend>Personal Information</legend>
+<label>First Name: <input type="text" name="fname' size="30"></label><br>
+<label>Last Name: <input type="text" name="lname" size="30"></label><br>
+<label>Phone: <input type="text" name="phone" size="25"></label><br>
+</fieldset>
+<fieldset>
+<legend>Pizza</legend>
+<input type="radio" name="size" value="small">Small<br>
+<input type="radio" name="size" value="medium">Medium<br>
+<input type="radio" name="size" value="large">Large<br>
+<label>Size: </label>
+</fieldset>
+<fieldset>
+<label>Toppings(check all that apply)</label>
+<input type="checkbox" name="toppings" value="1">Mushrooms<br>
+<input type="checkbox" name="toppings" value="1">Peppers<br>
+<input type="checkbox" name="toppings" value="1">Cheese<br>
+<input type="checkbox" name="toppings" value="1">Olives<br>
+</fieldset>
+
+<button type="submit">Enter my information</button>
+</form>
+<footer style="text-align: center;">
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a>
+</footer>
+<!—- content ends above here —->
+</body>
+</html>
+
