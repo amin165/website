@@ -30,13 +30,25 @@ p, pre {
       }
 #second {
           color: #040;
+      }
+a:link, a:visited {
+          font-weight: bold;
+          color: #000;
+          text-decoration: none;
+      }
+      
+a:hover, a:active {
+          color: #FF0;
+      }
+a:active {
+          font-size: xx-large;
       } 
 </style> 
 </head>
 <body>
 <!—- content starts below here —->
 <h1>Block-Level Elements</h1>
-<h2>Text In a Preformatted Element</h2>
+<h2 id="first">Text In a Preformatted Element</h2>
 <pre class="first">This             text
 
         spans              several
@@ -47,7 +59,7 @@ p, pre {
 
 whitespace.</pre>
 <p>In the text above, there is a lot of whitespace between each word. However, using the <pre> element, we are able to eliminate the any whitespaces between each line of words with correct formatting</p>
-<h2>Same Text in a Paragraph Element</h2>
+<h2 id="second">Same Text in a Paragraph Element</h2>
 <p>This             text
 
         spans              several
