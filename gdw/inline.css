@@ -1,0 +1,56 @@
+
+body {
+        background-color: #FFE4C4;
+        margin: 40px;
+    }
+section {
+        background-color: #FFF8DC;
+        padding: 20px;
+    }
+h1, footer {
+        text-align: center;
+    }
+    
+footer {
+        margin-top: 20px;
+    }
+a:link, a:visited {
+        color: #000;
+        text-decoration: none;
+    }
+
+b {
+        color: #800000;
+    }   
+    
+strong {
+        color: #D2691E;
+    }
+em { 
+	color: #00F
+}   
+i { 
+	font-size: 10px;	
+}
+code {
+	color: crimson;
+}
+
+kbd {
+	font-size: 12px;	
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+q:before {
+	content: open-quote;	
+}
+q:after {
+	content: close-quote;
+}
+span { 
+	color: #800000
+}
